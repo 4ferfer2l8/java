@@ -8,7 +8,7 @@ class Carro {
     private int Velocidade; // Atributo privado para encapsulamento
     
     // Método construtor da classe para inicializar os atributos
-    Carro(String Marca, String Modelo, String Cor, int Ano, int Velocidade) {
+    Carro(String Marca, int Ano, String Modelo, String Cor , int Velocidade) {
         this.Marca = Marca;
         this.Ano = Ano;
         this.Modelo = Modelo;
@@ -37,13 +37,13 @@ class Carro {
     }
 
     // Método getter para obter a velocidade do carro
-    public String getVelocidade() {
+    public int getVelocidade() {
         return Velocidade;
     }
 }
 
 // Classe principal que contém o método main
-public class Main {
+public class java {
     public static void main(String[] args) {
         // Criando um objeto da classe Carro chamada "carro1"
         Carro carro1 = new Carro("Ford", 2023, "Maverick", "Amarelo", 70);
